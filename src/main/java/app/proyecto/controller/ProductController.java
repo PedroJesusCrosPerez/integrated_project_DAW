@@ -1,7 +1,5 @@
 package app.proyecto.controller;
 
-import com.example.entity.Product;
-import com.example.repository.ProductRepository;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
