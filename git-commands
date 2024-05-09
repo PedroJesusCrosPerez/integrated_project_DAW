@@ -1,5 +1,0 @@
-git remote show origin
-git branch
-git checkout
-git rebase
-git cherry-pick
