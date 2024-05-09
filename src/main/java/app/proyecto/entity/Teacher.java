@@ -8,10 +8,7 @@
 //import lombok.EqualsAndHashCode;
 //import lombok.NoArgsConstructor;
 //
-//@Data
-//@NoArgsConstructor(force = true)
-//@AllArgsConstructor
-//@EqualsAndHashCode(callSuper = true)
+//@Data @NoArgsConstructor(force = true) @AllArgsConstructor @EqualsAndHashCode(callSuper = true)
 //@Entity
 //@Table(name = "teacher")
 //public final class Teacher extends Person {
