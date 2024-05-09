@@ -35,16 +35,16 @@ public class App {
         }
         */
         ApplicationContext context = SpringApplication.run(App.class, args);
-        var repo = context.getBean(BookRepository.class);
-
-        List<Book> books = List.of(
-                new Book(null, "book1", "author1", 10.0),
-                new Book(null, "book2", "author2", 15.0),
-                new Book(null, "book3", "author3", 20.0),
-                new Book(null, "book4", "author4", 25.0)
-        );
+//        var repo = context.getBean(BookRepository.class);
+//
+//        List<Book> books = List.of(
+//                new Book(null, "book1", "author1", 10.0),
+//                new Book(null, "book2", "author2", 15.0),
+//                new Book(null, "book3", "author3", 20.0),
+//                new Book(null, "book4", "author4", 25.0)
+//        );
 //        repo.saveAll(books);
-        System.out.println(books);
+//        System.out.println(books);
         System.out.println("Hola esto es una prueba DEBUG");
         System.out.println();
         System.out.println();

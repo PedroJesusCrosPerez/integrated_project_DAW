@@ -1,14 +1,14 @@
 services:
   mysql:
     image: 'mysql:latest'
-    container_name: mysql-pedro
+    container_name: mysqlpedro
     environment:
       - 'MYSQL_DATABASE=mydatabase'
 #      - 'MYSQL_PASSWORD=root'
       - 'MYSQL_ROOT_PASSWORD=root'
 #      - 'MYSQL_USER=root'
     ports:
-      - '3306'
+      - '3306:3306'
 
 
   backend:
