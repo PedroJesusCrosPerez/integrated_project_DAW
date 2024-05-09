@@ -18,16 +18,6 @@ public class HomeController {
         return "home"; // Esto asume que tienes una vista llamada "home.html"
     }
 
-    @GetMapping("/page1")
-    public String page1() {
-        return "page1";
-    }
-
-    @GetMapping("/page2")
-    public String page2() {
-        return "page2";
-    }
-
     @GetMapping("/entity/userAll")
     public String testEntity(Model model) {
         model.addAttribute(String.valueOf(new UserAll(3L, "pedro@gmail.es", "1234", "pedro", "cros")), "user");
