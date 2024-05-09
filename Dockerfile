@@ -28,11 +28,11 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 
     # No es necesario =>
 # ======= DOCKER =======
-# docker build -t backend:1.0 .
+# docker build -t pedro.cros/backend:1.0 .
 # docker image list
-# docker tag backend:1.0 pedro.cros/backend:1.0
 
 # ======= DOCKER HUB =======
+# docker tag backend:1.0 pedro.cros/backend:1.0
 # docker login
 # hub.docker.com
 # docker push pedro.cros/backend:1.0

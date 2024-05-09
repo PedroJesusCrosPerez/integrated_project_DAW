@@ -18,9 +18,9 @@ public class HomeController {
         return "home2"; // Esto asume que tienes una vista llamada "home2.html"
     }
 
-    @GetMapping("/entity/userAll")
-    public String testEntity(Model model) {
-        model.addAttribute(String.valueOf(new UserAll(3L, "pedro@gmail.es", "1234", "pedro", "cros")), "user");
-        return "home2"; // Esto asume que tienes una vista llamada "home2.html"
-    }
+//    @GetMapping("/entity/userAll")
+//    public String testEntity(Model model) {
+//        model.addAttribute(String.valueOf(new UserAll(3L, "pedro@gmail.es", "1234", "pedro", "cros")), "user");
+//        return "home2"; // Esto asume que tienes una vista llamada "home2.html"
+//    }
 }

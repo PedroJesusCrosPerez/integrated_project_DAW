@@ -2,13 +2,22 @@ services:
   mysql:
     image: 'mysql:latest'
     container_name: 'mysqlpedro'
+#    image: 'mysql:8.4.0'
+#    container_name: 'mysql-8.4.0'
+#    image: 'mysql:8.2.0'
+#    container_name: 'mysql-8.2.0'
     environment:
-      - 'MYSQL_DATABASE=db_integrated_proyect'
+      - 'MYSQL_DATABASE=db_integrated_project'
       - 'MYSQL_ROOT_PASSWORD=root'
-      - 'MYSQL_USER=root'
-      - 'MYSQL_PASSWORD=root'
+#      - 'MYSQL_USER=root'
+#      - 'MYSQL_PASSWORD=root'
     ports:
       - '3306:3306'
+#    healthcheck:
+#      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+#      interval: 10s
+#      timeout: 5s
+#      retries: 5
 
 
   backend:
@@ -29,4 +38,6 @@ services:
 #    depends_on:
 #      - backend
 
+
+# docker-compose exec backend ping -c 3 mysql
 # docker-compose up -d

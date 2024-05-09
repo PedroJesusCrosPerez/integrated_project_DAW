@@ -1,4 +1,4 @@
-package com.example.entity;
+package app.proyecto.entity;
 
 import jakarta.persistence.*;
 
@@ -6,8 +6,7 @@ import jakarta.persistence.*;
 @Table(name = "products")
 public class Product {
 
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
     private String title;
