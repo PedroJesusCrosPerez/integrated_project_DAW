@@ -1,7 +1,7 @@
 services:
   mysql:
     image: 'mysql:latest'
-    container_name: mysqlpedro
+    container_name: 'mysqlpedro'
     environment:
       - 'MYSQL_DATABASE=mydatabase'
 #      - 'MYSQL_PASSWORD=root'
@@ -12,12 +12,13 @@ services:
 
 
   backend:
-    image: pedro.cros/backend:1.0
-    container_name: spring-backend-pedro
+#    build: .
+    image: 'pedro.cros/backend:1.0'
+    container_name: 'spring-backend-pedro'
     ports:
-      - 8080:8080
+      - '8080:8080'
     depends_on:
-      - mysql
+      - 'mysql'
 
 
 # docker-compose up -d
