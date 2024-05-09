@@ -11,6 +11,8 @@ ENTRYPOINT ["java","-jar","/app.jar"]
 # docker build -t backend:1.0 .
 # docker image list
 # docker tag backend:1.0 pedro.cros/backend:1.0
+
+
 # docker login
 # hub.docker.com
 # docker push pedro.cros/backend:1.0
