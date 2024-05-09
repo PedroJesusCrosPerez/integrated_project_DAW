@@ -10,7 +10,7 @@ public class App {
 
     public static void main(String[] args) {
 //        TODO DESCOMENTAR PARA UTILIZAR DOCKER
-//        SpringApplication.run(App.class, args);
+        SpringApplication.run(App.class, args);
 
         System.out.println();
         System.out.println();
