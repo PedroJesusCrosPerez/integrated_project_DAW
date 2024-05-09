@@ -10,12 +10,12 @@ public class HomeController {
 
 //    @GetMapping("/")
 //    public String index() {
-//        return "redirect:/home"; // Esto asume que tienes una vista llamada "home.html"
+//        return "redirect:/home"; // Esto asume que tienes una vista llamada "home2.html"
 //    }
 
     @GetMapping("/home")
     public String home() {
-        return "home"; // Esto asume que tienes una vista llamada "home.html"
+        return "home2"; // Esto asume que tienes una vista llamada "home2.html"
     }
 
     @GetMapping("/page1")
@@ -31,6 +31,6 @@ public class HomeController {
     @GetMapping("/entity/userAll")
     public String testEntity(Model model) {
         model.addAttribute(String.valueOf(new UserAll(3L, "pedro@gmail.es", "1234", "pedro", "cros")), "user");
-        return "home"; // Esto asume que tienes una vista llamada "home.html"
+        return "home2"; // Esto asume que tienes una vista llamada "home2.html"
     }
 }
