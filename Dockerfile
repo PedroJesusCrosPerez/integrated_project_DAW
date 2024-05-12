@@ -21,6 +21,14 @@
 #    RUN mvn package
 #
 FROM eclipse-temurin:22
+LABEL author=PedroJesúsCrosPérez
+# Variables de entorno para hacer dinámico el fichero 'application.properties'
+ENV DATABASE_URL jdbc:mysql://mysqlpedro:3306/db_integrated_project
+ENV DATABASE_USERNAME root
+ENV DATABASE_PASSWORD root
+ENV DATABASE_PLATFORM org.hibernate.dialect.MySQL8Dialect
+ENV DATABASE_DRIVER com.mysql.cj.jdbc.Driver
+
 ARG JAR_FILE=target/*.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
